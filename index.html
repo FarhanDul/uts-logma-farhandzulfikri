@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Logika Matematika - Zakat Emas</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .info { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="number"], input[type="text"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #hasilZakat { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>UTS Logika Matematika</h1>
+
+    <div class="info">
+        <p><strong>NIM:</strong> 256512016</p>
+        <p><strong>Nama:</strong> Muhammad Farhan Dzulfikri Ar Raj</p>
+        <p><strong>Kelas:</strong> Informatika</p>
+        <p><strong>Dosen:</strong> Iin solihin,M.kom</p>
+        <p><strong>Kampus:</strong> Universitas masoem</p>
+    </div>
+
+    <hr>
+
+    <h2>Kalkulator Zakat Emas</h2>
+
+    <div class="form-group">
+        <input type="checkbox" id="aktifEmas" checked>
+        <label for="aktifEmas" style="display: inline;">Jumlah Emas (gram):</label>
+        <input type="number" id="jumlahEmas" value="0" min="0">
+    </div>
+
+    <div class="form-group">
+        <label for="lamaKepemilikan">Lama Kepemilikan (haul, tahun):</label>
+        <input type="number" id="lamaKepemilikan" value="0" min="0">
+    </div>
+
+    <button onclick="hitungZakat()">Periksa Kewajiban Zakat</button>
+
+    <hr>
+
+    <p id="hasilZakat"></p>
+    <p id="hukumLogika"></p>
+    <p id="argumenLogis"></p>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
