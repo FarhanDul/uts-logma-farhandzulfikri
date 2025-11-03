@@ -36,9 +36,16 @@ const nisabEmas = 85; // Nisab emas dalam gram
             }
 
             // Teks Hukum Logika
-            hukumLogikaElement.innerHTML = `Hukum logika pada perhitungan zakat di atas yaitu hukum **Konjungsi ($\land$)**. <br> 
-                                            Perhitungan ini menggunakan operator **AND** (` + '`&&`' + `) yang merupakan Konjungsi. 
-                                            Konjungsi ($p \land q$) bernilai **BENAR** (Wajib Zakat) hanya jika **kedua proposisi** ($p$: Emas $\geq 85$ gram) dan ($q$: Haul $\geq 1$ tahun) bernilai **BENAR** secara bersamaan.`;
+            hukumLogikaElement.innerHTML = const penjelasanLogika = `
+    <p>Hukum logika pada perhitungan zakat di atas yaitu hukum <strong>Konjungsi ($\land$)</strong>.</p>
+    <p>Perhitungan ini menggunakan operator <strong>AND</strong> (<code>&&</code>) yang merupakan Konjungsi.</p>
+    <p>
+        Konjungsi ($p \\land q$) bernilai <strong>BENAR</strong> (Wajib Zakat) hanya jika 
+        <strong>kedua proposisi</strong> ($p$: Emas $\\geq 85$ gram) dan ($q$: Haul $\\geq 1$ tahun) 
+        bernilai <strong>BENAR</strong> secara bersamaan.
+    </p>
+`;
+                
             
             // Teks Argumen Logis
             if (wajibZakat) {
